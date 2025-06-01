@@ -1,0 +1,621 @@
+
+
+*{
+    margin: 0;
+    font-family: Arial;
+    border: border-box;
+
+}
+.navbar{
+    background-color: rgb(251, 234, 234);
+    color: black;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.nav-logo{
+    height: 55px;
+    width:110px;
+}
+.ll{
+    font-size: 25px;
+    color:red;
+}
+/**
+.navbar-logo{
+    
+        background-image: url(ylogo.jpg);
+        background-size:cover;
+        height: 50px;
+        width: 105px;
+        display: flex;
+    
+}*/
+.border{
+    border: 2px solid  transparent;
+    
+}
+.border:hover{
+    border: 1.5px solid rgb(255, 253, 253);
+}
+/*box2**/
+.add-first{
+    color: rgb(250, 9, 9);
+    font-size:0.85rem;
+    margin-left:15px;
+
+}
+.add-second{
+color: white;
+font-size:1rem;
+margin-left:4px;
+}
+.add-icon
+{
+    display: flex;
+    align-items: center;
+}
+/**boxx**/
+.nav-search{
+    display:flex;
+    justify-content: space-evenly;
+    background-color: rgb(14, 14, 0);
+    width: 700px;
+    height: 30px;
+    border-radius: 5px;
+    
+}
+.search-seclect{
+    background-color: #f3f3f3;
+    width: 50px;
+    text-align: center;
+    
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border: none;
+}
+.search-input
+{
+    width:600%;
+    font-size: 1rem;
+    border: none;
+}
+.search-icon{
+    width: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3rem;
+    background-color:rgb(21, 15, 3);
+    border-top-right-radius:5px ;
+    border-bottom-right-radius:5px ;
+    color: #f4fafa; /**box4*//
+
+    
+}
+.sign{
+    color: black;
+}
+.nav-search:hover{
+    border: 2px solid orange;
+    margin-left: 2px;
+
+}
+.Header{
+    background-color: rgb(255, 196, 196);
+    color: black;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  
+}
+.Header a{
+    color: red;
+}
+.home{
+    margin-top: 20PX;
+    display: block;
+    margin-left: px;
+    margin-bottom: 25px;
+}
+.aa a {
+    color: red;
+}
+/**.box1{ 
+
+    display: flex;
+    background-color:rgb(203, 17, 17);
+    height: 340px;
+}
+*/
+
+.bg1{
+    
+    
+    background-color: rgb(19, 19, 19);
+   
+    
+}
+.bg{
+  
+   height: 498px;
+   width: 80%;
+   align-items: center;
+   justify-content: center;
+   display: flex;
+   margin-left: 9%;
+   background-image: url(image\ copy.png);
+   
+}
+
+
+.box1{
+    height: 500px;
+    width: 5.5%;
+    background-color:rgb(232, 229, 229); 
+    color: rgb(6, 6, 6); 
+    display: block;
+   
+}
+
+.shots{
+   
+    display: flex;
+    margin-left: 23px;
+}
+.sub
+{
+    margin-top: 35px;
+    margin-left: 25px;
+    display: block;
+}
+.you{
+    margin-top: 35px;
+    margin-left: 25px;
+    display: block;
+
+}
+.dawnload{
+    margin-top: 35px;
+    margin-left: 25px;
+    display: block;
+
+}
+.shots1{
+  
+    display: block;
+    margin-left: 23px;
+    
+  
+}
+.sub1
+{
+  
+    margin-left: 25px;
+    display: block;
+}
+.you1{
+    
+    margin-left: 25px;
+    display: block;
+}
+.dawnload1{
+    margin-left: 8px;
+    display: block;
+}
+.section{
+    display: flex;
+    width: 100%;
+     height: 400px;
+     justify-content:space-between;
+     background-color: rgb(252, 250, 250);
+}
+     
+.boxleft{
+    height: 100%;
+    width: 6%;
+    background-color: rgb(241, 150, 150);
+}
+.boxright
+{
+    height: 100%;
+    background-color:rgb(205, 27, 27);
+ 
+
+}
+.boxx{
+    height: 100%;
+    background-color: rgb(246, 242, 242);
+    
+}
+.boxxx{
+    height: 100%;
+    background-color: rgb(251, 248, 248);
+    
+}
+.boxxxx{
+    height: 100%;
+    background-color: rgb(254, 250, 250);
+  
+
+}
+.boxxxxx{
+    height: 100%;
+    background-color: rgb(254, 250, 250);
+  
+
+}
+/**.boxxxxx{
+    height: 100%;
+    width: 10%;
+    background-color: rgb(254, 250, 250);
+  
+
+
+}**/
+.you2{
+    margin-top: 0px;
+    background-color:rgb(249, 251, 254);
+    color: rgb(8, 42, 214);
+   
+    
+
+}
+
+.line{
+    width: 100%;
+    height: 5px;
+    background-color: rgb(0, 0, 11);
+}
+.box3{
+    height: 500px;
+    width: 5.5%;
+    background-color:rgb(232, 229, 229); 
+    color: rgb(6, 6, 6); 
+    display: block;
+}
+.history{
+    font-size: 30px;
+    padding-left: 20px;
+    margin-top: 20px;
+}
+.history1{
+    font-size: 15px;
+    padding-left: 10px;
+    margin-top: 10px;
+}
+.palylist{
+    font-size: 30px;
+   padding-left: 20px;
+    margin-top: 20px;
+}
+.playlist1{
+    font-size: 15px;
+  padding-left: 15px;
+    margin-top: 10px;
+
+}
+.watch-leter{
+    font-size: 30px;
+    padding-left: 20px;
+    margin-top: 20px;
+
+}
+.watch-leter1{
+    font-size: 15px;
+    padding-left: 15px;
+    margin-top: 10px;
+}
+.like-videos{
+    font-size: 30px;
+ padding-left: 20px;
+    margin-top: 20px;
+
+}
+.like-videos1{
+    font-size: 15px;
+   padding-left: 15px;
+    margin-top: 10px;
+}
+.short3{
+    font-size: 30px;
+    padding-left: 20px;
+    margin-top: 20px;
+
+}
+.shorts3{
+    font-size: 15px;
+  padding-left: 15px;
+    margin-top: 10px;
+
+}
+.section1{
+    display: flex;
+    width: 100%;
+     height: 500px;
+     
+    
+     background-color: rgb(217, 52, 34);
+}
+.boxleft1{
+    height: 100%;
+    width: 6%;
+    background-color: rgb(240, 237, 237);
+}
+.boxright1
+{
+    height: 100%;
+    width: 95%;
+    background-color: rgb(14, 13, 13);
+    
+
+}
+/**box4**/
+.box4{
+    height: 50px;
+    background-color: rgb(108, 113, 113);
+    display: flex;
+    justify-content: space-between;
+   margin-top: 20px;
+   font-size: 25px;
+}
+.box4 a{
+    font-size: 20px;
+    color: white;
+    background-color: blue;
+    height: 30px;
+    border: transparent;
+    border: solid red;
+    width: 10%;
+    margin-top: 10px;
+}
+
+/**.bg1{
+    
+    
+    background-color: rgb(19, 19, 19);
+   
+    
+}
+.bg{
+  
+   height: 498px;
+   width: 80%;
+   align-items: center;
+   justify-content: center;
+   display: flex;
+   margin-left: 9%;
+   background-image: url(image\ copy.png);
+   
+}**/
+
+
+.container{
+    padding: 1rem;
+    width: 95%;
+
+}
+.slider-wapper{
+    position: relative;
+    max-width: 36rem;
+    margin: 0 auto;
+
+}
+.slider{
+    display: flex;
+    aspect-ratio:5.7/2;
+    overflow: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    box-shadow: 0.1rem 3rem -0.75rem hsla(0, 0%, 3%, 0.25);
+    border-radius: 1rem;
+    width: 100%;
+    margin-left: 20px;
+}
+.slider img{
+    flex: 1 0 100%;
+    scroll-snap-align: start;
+    scroll-behavior: auto;
+}
+.explore
+{
+    font-size: 30px;
+    font-weight: 10px;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+.service{
+    font-size: 30px;
+    margin-top: 10px;
+    margin-left: 2%;
+
+}
+/**box5 start here**/
+.box5{
+    height: 750px;
+    width: 100%;
+    background-color: #f4fafa;
+}
+.RP{
+    margin-left: 4%;
+    font-size: 30px;
+    margin-top: 50px;
+    background-color: red;
+}
+.u1{
+    margin-left: 5%;
+    font-size: 20px;
+
+}
+.li1{
+    margin-left: 5%;
+    font-size: 15px;
+}
+.help{
+    margin-left: 4%;
+    font-size: 30px;
+    margin-top: 30px;
+    background-color: red;
+}
+.contact{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.feedback{
+    background-color: red;
+    font-size: 30px;
+    margin-left: 30px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+.button11
+{
+    font-size: 50px;
+    background-color: rgb(213, 213, 218);
+    
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+.b1{
+    background-color: blue;
+    color: white;
+    font-size: 20px;
+    margin-left: 35%;
+}
+.b2{
+    background-color: blue;
+    color: white;
+    font-size: 20px;
+
+}
+.b3{
+    background-color: blue;
+    color: white;
+    font-size: 20px;
+    margin-right: 35%;
+}
+.comment{
+    font-size: 50px;
+}
+
+/**for sing n intro **/
+.body{
+    background-color: rgb(239, 20, 0);
+    height: 55px;
+    font-size: 30px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.personal{
+  background-color: rgb(245, 228, 226) ; 
+  height: 520px;  
+}
+.sift{
+   margin-left: 40%;
+   font-size: 30px;
+    
+}
+.IN{
+    margin-left: 4%;
+    font-size: 25px; 
+    background-color: red;   
+}
+.information{
+    background-color:white;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+.ad{
+    margin-left: 58px;
+    font-size: 25px; 
+    background-color: red;   
+
+}
+.address{
+    background-color:white;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+.button{
+    font-size: 20px;
+    background-color: blue;
+    color: white;
+   margin-left: 49%;
+   margin-top: 20px;
+
+}
+.admin{
+    margin-left: 58px;
+    font-size: 25px; 
+    background-color: red;
+       
+}
+.login-from{
+    background-color:white;
+    width: 100%;
+    height: 45px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+
+}
+.login{
+    background-color: blue;
+    color: white;
+    font-size: 20px;
+}
+.submit{
+    background-color: blue;
+    color: white;
+    display: flex;
+    margin-left: 49%;
+    font-size: 20px;
+    margin-top: 20px;
+    
+}
+footer{height: 150px;
+background-color:orange;
+}
+/**.button2{
+    background-color: white;
+    height: 40px;
+    font: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}**/
+.drop{
+    margin-left: 58px;
+    font-size: 25px; 
+    background-color: red;
+}
+.rate{
+    background-color:white;
+    width: 100%;
+    height: 45px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+    margin-right: 5%;
+   
+}
+/** sign in end her
+
+**/

@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Improved Settings Page</title>
+  <style>
+    :root {
+      --primary-color: #4a90e2;
+      --bg-color: #f9f9f9;
+      --text-color: #333;
+      --card-bg: #fff;
+      --transition-speed: 0.3s;
+    }
+
+    body.dark-mode {
+      --bg-color: #121212;
+      --text-color: #f1f1f1;
+      --card-bg: #1f1f1f;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      transition: background-color var(--transition-speed), color var(--transition-speed);
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 50px auto;
+      background-color: var(--card-bg);
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+      transition: background-color var(--transition-speed);
+    }
+
+    h2 {
+      margin-bottom: 30px;
+      color: var(--primary-color);
+    }
+
+    .section {
+      margin-bottom: 40px;
+    }
+
+    .section h3 {
+      border-bottom: 2px solid var(--primary-color);
+      padding-bottom: 10px;
+      margin-bottom: 20px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 10px;
+      font-weight: 600;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="password"],
+    select {
+      width: 100%;
+      padding: 12px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      margin-bottom: 20px;
+    }
+
+    .toggle-switch {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .switch {
+      position: relative;
+      width: 50px;
+      height: 26px;
+    }
+
+    .switch input {
+      opacity: 0;
+      width: 0;
+      height: 0;
+    }
+
+    .slider {
+      position: absolute;
+      cursor: pointer;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: #ccc;
+      transition: var(--transition-speed);
+      border-radius: 26px;
+    }
+
+    .slider:before {
+      position: absolute;
+      content: "";
+      height: 20px;
+      width: 20px;
+      left: 3px;
+      bottom: 3px;
+      background-color: white;
+      transition: var(--transition-speed);
+      border-radius: 50%;
+    }
+
+    .switch input:checked + .slider {
+      background-color: var(--primary-color);
+    }
+
+    .switch input:checked + .slider:before {
+      transform: translateX(24px);
+    }
+
+    .save-btn {
+      background-color: var(--primary-color);
+      color: #fff;
+      padding: 12px 24px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 16px;
+      transition: background-color var(--transition-speed);
+    }
+
+    .save-btn:hover {
+      background-color: #357ab8;
+    }
+
+    .preference-group {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    @media (max-width: 600px) {
+      .container {
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Account Settings</h2>
+
+    <div class="section">
+      <h3>Profile</h3>
+      <label for="name">Full Name</label>
+      <input type="text" id="name" placeholder="John Doe" />
+
+      <label for="email">Email Address</label>
+      <input type="email" id="email" placeholder="john@example.com" />
+    </div>
+
+    <div class="section">
+      <h3>Account</h3>
+      <label for="password">New Password</label>
+      <input type="password" id="password" placeholder="Enter new password" />
+
+      <label for="language">Preferred Language</label>
+      <select id="language">
+        <option>English</option>
+        <option>Spanish</option>
+        <option>German</option>
+        <option>French</option>
+      </select>
+    </div>
+
+    <div class="section">
+      <h3>Notifications</h3>
+      <div class="preference-group">
+        <label><input type="checkbox" checked /> Email Notifications</label>
+        <label><input type="checkbox" /> Push Notifications</label>
+        <label><input type="checkbox" /> Weekly Summary</label>
+      </div>
+    </div>
+
+    <div class="section">
+      <h3>Privacy</h3>
+      <div class="preference-group">
+        <label><input type="checkbox" checked /> Show profile to search engines</label>
+        <label><input type="checkbox" /> Enable 2FA</label>
+      </div>
+    </div>
+
+    <div class="section">
+      <h3>Theme</h3>
+      <div class="toggle-switch">
+        <span>Dark Mode</span>
+        <label class="switch">
+          <input type="checkbox" id="darkModeToggle" />
+          <span class="slider"></span>
+        </label>
+      </div>
+    </div>
+
+    <button class="save-btn">Save Changes</button>
+  </div>
+
+  <script>
+    const toggle = document.getElementById('darkModeToggle');
+    toggle.addEventListener('change', () => {
+      document.body.classList.toggle('dark-mode', toggle.checked);
+    });
+  </script>
+</body>
+</html>
+<!--<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Viewing History</title>
+      <style>
+        :root {
+          --primary-color: #6c63ff;
+          --bg-color: #afafeb;
+          --card-bg: #fff;
+          --text-color: #333;
+        }
+    
+        body {
+          margin: 0;
+          padding: 0;
+          font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+          background-color: var(--bg-color);
+          color: var(--text-color);
+        }
+    
+        .container {
+          max-width: 1000px;
+          margin: 40px auto;
+          padding: 0 20px;
+        }
+    
+        h1 {
+          text-align: center;
+          color: var(--primary-color);
+          margin-bottom: 40px;
+        }
+    
+        .history-grid {
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+          gap: 20px;
+        }
+    
+        .history-card {
+          background-color: var(--card-bg);
+          border-radius: 12px;
+          padding: 20px;
+          box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+          transition: transform 0.2s;
+        }
+    
+        .history-card:hover {
+          transform: translateY(-5px);
+        }
+    
+        .history-title {
+          font-size: 1.2rem;
+          font-weight: bold;
+          margin-bottom: 10px;
+          color: var(--primary-color);
+        }
+    
+        .history-meta {
+          font-size: 0.9rem;
+          color: #777;
+          margin-bottom: 10px;
+        }
+    
+        .history-description {
+          font-size: 0.95rem;
+          line-height: 1.5;
+        }
+    
+        .clear-btn {
+          display: block;
+          margin: 30px auto 0;
+          padding: 12px 24px;
+          background-color: #e74c3c;
+          color: #fff;
+          border: none;
+          border-radius: 8px;
+          cursor: pointer;
+          font-size: 16px;
+        }
+    
+        .clear-btn:hover {
+          background-color: #c0392b;
+        }
+      </style>
+    </head>
+    <body>
+      <div class="container">
+        <h1>Viewing History</h1>
+    
+        <div class="history-grid" id="historyList">
+          Example card 
+          <div class="history-card">
+            <div class="history-title">Article Title or Page</div>
+            <div class="history-meta">Viewed on: 2025-05-04</div>
+            <div class="history-description">
+              A short description or preview of what the user saw.
+            </div>
+          </div>
+        </div>
+    
+        <button class="clear-btn" onclick="clearHistory()">Clear History</button>
+      </div>
+    
+      <script>
+        const historyData = JSON.parse(localStorage.getItem("viewHistory")) || [];
+        const historyList = document.getElementById("historyList");
+    
+        function displayHistory() {
+          historyList.innerHTML = "";
+          if (historyData.length === 0) {
+            historyList.innerHTML = '<p>No history found.</p>';
+            return;
+          }
+          historyData.forEach(item => {
+            const card = document.createElement("div");
+            card.className = "history-card";
+            card.innerHTML = `
+              <div class="history-title">${item.title}</div>
+              <div class="history-meta">Viewed on: ${item.date}</div>
+              <div class="history-description">${item.description}</div>
+            `;
+            historyList.appendChild(card);
+          });
+        }
+    
+        function clearHistory() {
+          localStorage.removeItem("viewHistory");
+          displayHistory();
+        }
+    
+        displayHistory();
+      </script>
+    </body>
+    </html>-->
+    
